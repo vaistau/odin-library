@@ -75,13 +75,7 @@ label {
 .title-container,
 .author-container,
 .status-container,
-.space-container {
-    display: flex;
-    flex-grow: 0;
-    flex-basis: 33.33%;
-    justify-content: space-between;
-}
-
+.space-container,
 .new-title-container,
 .new-author-container,
 .new-status-container,
