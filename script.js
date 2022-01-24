@@ -26,25 +26,38 @@ function render () {
         const newBookContainer = document.createElement('div');
         newBookContainer.className = 'new-book-container';
     
+        const newTitleContainer = document.createElement('div');
+        newTitleContainer.className = 'new-title-container';
+        newBookContainer.appendChild(newTitleContainer);
         const newBookTitle = document.createElement('div');
         newBookTitle.className = 'new-title';
         newBookTitle.innerHTML = library[library.length - 1].title;
-        newBookContainer.appendChild(newBookTitle);
+        newTitleContainer.appendChild(newBookTitle);
     
+        const newAuthorContainer = document.createElement('div');
+        newAuthorContainer.className = 'new-author-container';
+        newBookContainer.appendChild(newAuthorContainer);
         const newBookAuthor = document.createElement('div');
         newBookAuthor.className = 'new-author';
         newBookAuthor.innerHTML = library[library.length - 1].author;
-        newBookContainer.appendChild(newBookAuthor);
+        newAuthorContainer.appendChild(newBookAuthor);
     
+
+        const newStatusContainer = document.createElement('div');
+        newStatusContainer.className = 'new-status-container';
+        newBookContainer.appendChild(newStatusContainer);
         const newBookStatus = document.createElement('button');
         newBookStatus.className = 'new-status-button';
         newBookStatus.innerHTML = library[library.length - 1].status;
-        newBookContainer.appendChild(newBookStatus);
+        newStatusContainer.appendChild(newBookStatus);
     
+        const newDeleteContainer = document.createElement('div');
+        newDeleteContainer.className = 'new-delete-container';
+        newBookContainer.appendChild(newDeleteContainer);
         const newDeleteButton = document.createElement('button');
         newDeleteButton.className = 'new-delete-button';
         newDeleteButton.textContent = 'Delete';
-        newBookContainer.appendChild(newDeleteButton); 
+        newDeleteContainer.appendChild(newDeleteButton); 
 
         libraryBooks.appendChild(newBookContainer);
 }
