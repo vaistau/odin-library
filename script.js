@@ -21,7 +21,6 @@ addBook('The Hobbit', 'Your Mom', 'Read');
 addBook('The Hobbid', 'Your Dad', 'Not read');
 
 //creates DOM elements needed to display last book added to library array
-
 function render () {
         const newBookContainer = document.createElement('div');
         newBookContainer.className = 'new-book-container';
