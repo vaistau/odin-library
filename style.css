@@ -29,7 +29,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin: 10px 0px
+    margin: 20px 0px
 }
 
 #submission-boxes {
