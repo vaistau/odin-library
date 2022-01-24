@@ -1,4 +1,4 @@
-const libraryBooks = document.getElementById('library-books');
+const libraryBooks = document.querySelector('.library-books');
 
 //book constructor
 const book = function(title, author, status) {
