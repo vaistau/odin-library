@@ -9,6 +9,8 @@ body {
     justify-content: center;
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 button {
@@ -18,11 +20,13 @@ button {
 #container {
     display: flex;
     flex-direction: column;
+    width:65%;
 }
 
 #header-container {
     display: flex;
     flex-direction: column;
+    padding-top: 50px;
 }
 
 #submission-container {
@@ -35,7 +39,8 @@ button {
 #submission-boxes {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap:30px;
+    justify-content: start;
 }
 
 .submission-box {
@@ -51,19 +56,45 @@ button {
 }
 
 #library-header {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+    display: grid;
+    grid-auto-columns: 400px;
+}
+
+#title-header {
+    grid-column-start: 1;
+}
+
+#author-header {
+    grid-column-start: 2;
+}
+
+#status-header {
+    grid-column-start: 3;
 }
 
 #library-books {
-display: flex;
-flex-direction: column;
-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .new-book-container {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+    display: grid;
+    grid-auto-columns: 400px;
+}
+
+.new-title {
+    grid-column-start: 1;
+}
+
+.new-author {
+    grid-column-start: 2;
+}
+
+.new-status-button {
+    grid-column-start: 3;
+}
+
+.new-delete-button {
+    grid-column-start: 4;
 }
