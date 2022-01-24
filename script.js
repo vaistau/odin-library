@@ -1,23 +1,25 @@
-const container = document.querySelector('#container');
+const libraryContainer = document.getElementById('library-container');
 
-let myLibrary = [];
-
-const book = {
-    info: function () {
-        return this.title + ' by ' + this.author + ', ' + this.pages + ' pages, ' + this.read
+//book constructor
+const book = function(title, author, read) {
+        this.title = title;
+        this.author = author;
+        this.read = read;
     }
+
+//creates book with constructor and pushes it to library
+let library = [];
+
+const addBook = function (title, author, read) {
+    const newBook = new book(title, author, read);
+    library.push(newBook);
 }
 
-const addBookToLibrary = function (newBook) {
-    myLibrary.push(newBook);
+//example books
+addBook('The Hobbit', 'Your Mom', false);
+console.log(library[0].title)
+
+//add DOM elements needed to display new books
+for (let i = 0; i < library.length; i++) {
+    const newBookContainer = document.createElement('div');
 }
-
-const newBook = Object.create(book);
-newBook.title = 'The Hobbid'
-newBook.author = 'Ballsack'
-newBook.pages = '420'
-newBook.read = 'No'
-addBookToLibrary(newBook);
-
-container.innerHTML = myLibrary[0].info;
-console.log(newBook.title)
