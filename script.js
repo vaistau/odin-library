@@ -21,19 +21,19 @@ addBook('The Hobbit', 'Your Mom', 'Read');
 addBook('The Hobbid', 'Your Dad', 'Not read');
 
 //creates DOM elements needed to display last book added to library array
+
 function render () {
         const newBookContainer = document.createElement('div');
         newBookContainer.className = 'new-book-container';
-        libraryBooks.appendChild(newBookContainer);
     
         const newBookTitle = document.createElement('div');
         newBookTitle.className = 'new-title';
-        newBookTitle.textContent = library[library.length - 1].title;
+        newBookTitle.innerHTML = library[library.length - 1].title;
         newBookContainer.appendChild(newBookTitle);
     
         const newBookAuthor = document.createElement('div');
         newBookAuthor.className = 'new-author';
-        newBookAuthor.textContent = library[library.length - 1].author;
+        newBookAuthor.innerHTML = library[library.length - 1].author;
         newBookContainer.appendChild(newBookAuthor);
     
         const newBookStatus = document.createElement('button');
@@ -43,6 +43,8 @@ function render () {
     
         const newDeleteButton = document.createElement('button');
         newDeleteButton.className = 'new-delete-button';
-        newDeleteButton.innerHTML = 'Delete';
-        newBookContainer.appendChild(newDeleteButton);
+        newDeleteButton.textContent = 'Delete';
+        newBookContainer.appendChild(newDeleteButton); 
+
+        libraryBooks.appendChild(newBookContainer);
 }

@@ -20,7 +20,7 @@ button {
 #container {
     display: flex;
     flex-direction: column;
-    width:65%;
+    width: 80%;
 }
 
 #header-container {
@@ -39,8 +39,8 @@ button {
 #submission-boxes {
     display: flex;
     flex-direction: row;
-    gap:30px;
-    justify-content: start;
+    gap: 20px;
+    justify-content: space-between;
 }
 
 .submission-box {
@@ -56,20 +56,16 @@ button {
 }
 
 #library-header {
-    display: grid;
-    grid-auto-columns: 300px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
 }
 
-#title-header {
-    grid-column-start: 1;
-}
-
-#author-header {
-    grid-column-start: 2;
-}
-
+#title-header,
+#author-header,
 #status-header {
-    grid-column-start: 3;
+    display: flex;
 }
 
 #library-books {
@@ -79,23 +75,8 @@ button {
 }
 
 .new-book-container {
-    display: grid;
-    grid-auto-columns: 300px;
-    grid-template-columns: auto minmax;
-}
-
-.new-title {
-    grid-column-start: 1;
-}
-
-.new-author {
-    grid-column-start: 2;
-}
-
-.new-status-button {
-    grid-column-start: 3;
-}
-
-.new-delete-button {
-    grid-column-start: 4;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
 }
