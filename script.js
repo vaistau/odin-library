@@ -17,8 +17,8 @@ const addBook = function (title, author, status) {
 }
 
 //example books
-addBook('The Hobbit', 'Your Mom', 'Read');
-addBook('The Hobbid', 'Your Dad', 'Not read');
+addBook('Cat\'s Cradle', 'Kurt Vonnegut', 'Read');
+addBook('The Hobbit', 'J. R. R. Tolkien', 'Not read');
 
 //creates DOM elements needed to display last book added to library array
 function render () {
