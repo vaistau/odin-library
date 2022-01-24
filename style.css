@@ -6,6 +6,13 @@ html {
 body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    width: 70px;
 }
 
 #header-container {
@@ -20,6 +27,7 @@ body {
 
 #submission-boxes {
     display: flex;
+    flex-direction: row;
 }
 
 .submission-box {
