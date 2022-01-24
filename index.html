@@ -1,17 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Odin Library</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <h1>Odin Library</h1>
-        <div id='container'></div>
-        
-        <script src="script.js" async defer></script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Odin Library</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header-container">
+        <h1>My Library</h1>
+        <div id="description">example text for description</div>
+    </div>
+
+    <div id="submission-container">
+        <div id="submission-boxes">
+
+            <div id="title-submission" class="submission-box">
+                <div class="submission-header">Book</div>
+                <input type="text">
+            </div>
+
+            <div id="author-submission" class="submission-box">
+                <div class="submission-header">Author</div>
+                <input type="text">
+            </div>
+
+            <div id="status-submission" class="submission-box">
+                <label for="status">Status</label>
+                <select name="status" id="status">
+                    <option value="read">Read</option>
+                    <option value="not read">Not read</option>
+                </select>
+            </div>
+        </div>
+
+        <button id="submission-button">Submit</button>
+    </div>
+
+    <div id="library-container">
+        <div id="library-header">
+            <div>Title</div>
+            <div>Author</div>
+            <div>Status</div>
+        </div>
+
+        <divs id="library-books"></divs>
+    </div>
+
+
+    <script src="script.js" async defer></script>
+</body>
+
 </html>
