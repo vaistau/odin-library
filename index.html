@@ -11,46 +11,47 @@
 </head>
 
 <body>
-    <div id="header-container">
-        <h1>My Library</h1>
-        <div id="description">example text for description</div>
-    </div>
-
-    <div id="submission-container">
-        <div id="submission-boxes">
-
-            <div id="title-submission" class="submission-box">
-                <div class="submission-header">Book</div>
-                <input type="text">
-            </div>
-
-            <div id="author-submission" class="submission-box">
-                <div class="submission-header">Author</div>
-                <input type="text">
-            </div>
-
-            <div id="status-submission" class="submission-box">
-                <label for="status">Status</label>
-                <select name="status" id="status">
-                    <option value="read">Read</option>
-                    <option value="not read">Not read</option>
-                </select>
-            </div>
+    <div id="container">
+        <div id="header-container">
+            <h1>My Library</h1>
+            <div id="description">example text for description</div>
         </div>
 
-        <button id="submission-button">Submit</button>
-    </div>
+        <div id="submission-container">
+            <div id="submission-boxes">
 
-    <div id="library-container">
-        <div id="library-header">
-            <div>Title</div>
-            <div>Author</div>
-            <div>Status</div>
+                <div id="title-submission" class="submission-box">
+                    <div class="submission-header">Book</div>
+                    <input type="text">
+                </div>
+
+                <div id="author-submission" class="submission-box">
+                    <div class="submission-header">Author</div>
+                    <input type="text">
+                </div>
+
+                <div id="status-submission" class="submission-box">
+                    <label for="status">Status</label>
+                    <select name="status" id="status">
+                        <option value="read">Read</option>
+                        <option value="not read">Not read</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="submission-button">Submit</button>
         </div>
 
-        <divs id="library-books"></divs>
-    </div>
+        <div id="library-container">
+            <div id="library-header">
+                <div>Title</div>
+                <div>Author</div>
+                <div>Status</div>
+            </div>
 
+            <divs id="library-books"></divs>
+        </div>
+    </div>
 
     <script src="script.js" async defer></script>
 </body>
