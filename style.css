@@ -57,7 +57,7 @@ button {
 
 #library-header {
     display: grid;
-    grid-auto-columns: 400px;
+    grid-auto-columns: 300px;
 }
 
 #title-header {
@@ -80,7 +80,8 @@ button {
 
 .new-book-container {
     display: grid;
-    grid-auto-columns: 400px;
+    grid-auto-columns: 300px;
+    grid-template-columns: auto minmax;
 }
 
 .new-title {
